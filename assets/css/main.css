@@ -2287,7 +2287,7 @@ avatar:before {
   animation-name: cfFadeInOut;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 7.5s;
+  animation-duration: 5.5s;
   animation-direction: alternate;
   width: 30%;
   height: auto;
@@ -2298,7 +2298,7 @@ avatar:before {
   animation-name: cfFadeInOut;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 9s;
+  animation-duration: 7s;
   animation-direction: alternate;
   width: 30%;
   height: auto;
@@ -2309,7 +2309,7 @@ avatar:before {
   animation-name: cfFadeInOut;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 5.5s;
+  animation-duration: 3.5s;
   animation-direction: alternate;
   width: 30%;
   height: auto;
