@@ -205,14 +205,13 @@ a {
   -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  border-bottom: dotted 1px;
-  color: #49bf9d;
+  /* color: #49bf9d; */
   text-decoration: none;
 }
 
 a:hover {
   border-bottom-color: transparent;
-  color: #49bf9d !important;
+  /* color: #49bf9d !important; */
   text-decoration: none;
 }
 
@@ -240,7 +239,7 @@ h6 {
   color: #787878;
   font-weight: 400;
   line-height: 1em;
-  margin: 0 0 1em 0;
+  margin: 0 0 0.5em 0;
 }
 
 h1 a,
@@ -379,14 +378,27 @@ pre code {
 .container.max {
   width: 100%;
 }
+/* THIS WAS A TEXT TO SEE IF A FIXED WIDTH WOULD WORK */
+/* .avatar img {
+    border-radius: 100%;
+    
+    max-width: 389.59px;
+    height: auto;
+    border: yellow 5px solid;
+} */
 
 @media screen and (max-width: 980px) {
+  .avatar img {
+    border-radius: 100%;
+    width: 50% !important;
+    /* border: blue 5px solid !important; */
+  }
   .container {
     width: 100% !important;
     max-width: 100% !important;
   }
 }
-
+/* /////// THis is where I fisrt tested my max myPic */
 @media screen and (max-width: 480px) {
   .container {
     max-width: calc(100% - 3em);
@@ -637,6 +649,11 @@ pre code {
 }
 
 @media screen and (max-width: 1800px) {
+  /* .avatar img {
+    border-radius: 100%;
+    width: 100%;
+    border: white 5px solid !important;
+  } */
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -880,6 +897,11 @@ pre code {
 }
 
 @media screen and (max-width: 1280px) {
+  /* .avatar img {
+    border-radius: 100%;
+    width: 100%;
+    border: yellow 5px solid;
+  } */
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -2128,7 +2150,86 @@ input[type="radio"] + label:before {
 .icon.brands:before {
   font-family: "Font Awesome 5 Brands";
 }
+/* Moving Text/////////////////////////////////////////// */
+.cd-intro {
+  margin: 3em auto;
+}
+@media only screen and (min-width: 768px) {
+  .cd-intro {
+    margin: 4em auto;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-intro {
+    margin: 5em auto;
+  }
+}
+.cd-headline {
+  font-size: 1.5em;
+  /* line-height: 2.2; */
+}
+@media only screen and (min-width: 768px) {
+  .cd-headline {
+    font-size: 2.4rem;
+    font-weight: 200;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-headline {
+    font-size: 4rem;
+  }
+}
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+.cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+.cd-words-wrapper b.is-visible {
+  position: relative;
+}
+.no-js .cd-words-wrapper b {
+  opacity: 0;
+}
+.no-js .cd-words-wrapper b.is-visible {
+  opacity: 1;
+}
+/* -------------------------------- 
+  
+  xclip 
+  
+  -------------------------------- */
 
+.cd-headline.clip span {
+  display: inline-block;
+  padding: 0.2em 0;
+}
+.cd-headline.clip .cd-words-wrapper {
+  overflow: hidden;
+  vertical-align: top;
+}
+.cd-headline.clip .cd-words-wrapper::after {
+  /* line */
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #aebcb9;
+}
+.cd-headline.clip b {
+  opacity: 0;
+}
+.cd-headline.clip b.is-visible {
+  opacity: 1;
+}
 /* Image */
 
 .image {
@@ -2231,6 +2332,7 @@ input[type="radio"] + label:before {
 
 .avatar {
   border-radius: 100%;
+  /* border: green 5px solid; */
 }
 
 avatar:before {
@@ -2240,6 +2342,14 @@ avatar:before {
 .avatar img {
   border-radius: 100%;
   width: 100%;
+  /* border: yellow 5px solid; */
+  /* margin: 0.5em; */
+}
+
+#myPic {
+  display: flex;
+  justify-content: center;
+  /* border: solid pink 5px; */
 }
 @keyframes cfFadeInOut {
   0% {
@@ -2254,11 +2364,6 @@ avatar:before {
   100% {
     opacity: 0;
   }
-}
-#myPic {
-  display: flex;
-  justify-content: center;
-  /* border: solid white 5px; */
 }
 
 .interestsDiv {
@@ -2280,6 +2385,7 @@ avatar:before {
   width: 30%;
   height: auto;
   border-radius: 100%;
+  margin: 0.5em;
 }
 
 #cf img.topInterests {
@@ -2292,6 +2398,7 @@ avatar:before {
   width: 30%;
   height: auto;
   border-radius: 100%;
+  margin: 0.5em;
 }
 #cf img.topInterests1 {
   position: absolute;
@@ -2303,18 +2410,21 @@ avatar:before {
   width: 30%;
   height: auto;
   border-radius: 100%;
+  margin: 0.5em;
 }
 #cf img.topInterests2 {
   position: absolute;
   animation-name: cfFadeInOut;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 3.5s;
+  animation-duration: 5.5s;
   animation-direction: alternate;
   width: 30%;
   height: auto;
   border-radius: 100%;
+  margin: 0.5em;
 }
+
 /* List */
 
 ol {
@@ -2765,7 +2875,8 @@ input[type="button"]:disabled,
   justify-content: space-between;
   background-color: #1f1815;
   background-attachment: scroll, scroll;
-  background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+  background-image: url("images/overlay.png"),
+    url("../../images/backgroundCodeCup.png");
   background-position: top left, top left;
   background-repeat: repeat, no-repeat;
   background-size: auto, 150%;
@@ -2815,7 +2926,7 @@ input[type="button"]:disabled,
   margin: 0;
 }
 
-#header .image.avatar {
+#header .image {
   margin: 0 0 1em 0;
   width: 6.25em;
 }
