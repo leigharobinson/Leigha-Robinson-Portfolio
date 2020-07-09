@@ -2342,8 +2342,15 @@ avatar:before {
 .avatar img {
   border-radius: 100%;
   width: 100%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+
   /* border: yellow 5px solid; */
   /* margin: 0.5em; */
+}
+
+.avatar:hover {
+  transform: scale(1.05);
 }
 
 #myPic {
@@ -2378,7 +2385,7 @@ avatar:before {
 }
 #cf {
   position: relative;
-  margin: 0 auto;
+  white-space: nowrap;
 }
 
 #cf img.bottomInterests {
@@ -2386,6 +2393,10 @@ avatar:before {
   height: auto;
   border-radius: 100%;
   margin: 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
+
+  /* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); */
 }
 
 #cf img.topInterests {
@@ -2399,6 +2410,7 @@ avatar:before {
   height: auto;
   border-radius: 100%;
   margin: 0.5em;
+  /* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); */
 }
 #cf img.topInterests1 {
   position: absolute;
@@ -2411,18 +2423,20 @@ avatar:before {
   height: auto;
   border-radius: 100%;
   margin: 0.5em;
+  /* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); */
 }
 #cf img.topInterests2 {
   position: absolute;
   animation-name: cfFadeInOut;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 5.5s;
+  animation-duration: 3.5s;
   animation-direction: alternate;
   width: 30%;
   height: auto;
   border-radius: 100%;
   margin: 0.5em;
+  /* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); */
 }
 
 /* List */
@@ -2739,8 +2753,9 @@ input[type="button"],
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
 }
-
+/* TESTIG BUTTON SHADDOW */
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
