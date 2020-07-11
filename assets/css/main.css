@@ -2351,6 +2351,9 @@ input[type="radio"] + label:before {
   width: calc(33.33% - 25px);
   background-color: white;
 } */
+#importantWords {
+  color: rgb(109, 109, 109);
+}
 .avatar {
   border-radius: 100%;
   /* border: green 5px solid; */
