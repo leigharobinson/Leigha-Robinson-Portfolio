@@ -2354,14 +2354,16 @@ input[type="radio"] + label:before {
 /* #importantWords {
   color: rgb(109, 109, 109);
 } */
+
 .avatar {
   border-radius: 100%;
   /* border: green 5px solid; */
 }
 #hover_matt {
-  background: rgb(109, 109, 109);
-  /* padding: 0.35em; */
+  background: rgba(109, 109, 109, 0.5);
+  margin: 0.35em;
 }
+
 avatar:before {
   display: none;
 }
