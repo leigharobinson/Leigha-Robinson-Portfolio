@@ -2239,6 +2239,29 @@ input[type="radio"] + label:before {
   position: relative;
 }
 
+#fitPic {
+  padding: 1.5em;
+}
+#techIcon {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#techIcon2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#techIcon img {
+  padding: 0.2em;
+  margin: 0.5em;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+#techIcon2 img {
+  padding: 0.2em;
+  margin: 0.5em;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
 .image:before {
   -moz-transition: opacity 0.2s ease-in-out;
   -webkit-transition: opacity 0.2s ease-in-out;
