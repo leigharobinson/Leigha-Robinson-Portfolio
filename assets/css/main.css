@@ -2238,6 +2238,10 @@ input[type="radio"] + label:before {
   display: inline-block;
   position: relative;
 }
+
+#fitPic {
+  padding: 1.5em;
+}
 #techIcon {
   display: flex;
   justify-content: space-evenly;
