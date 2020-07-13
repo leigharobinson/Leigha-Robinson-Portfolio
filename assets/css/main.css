@@ -2244,7 +2244,7 @@ input[type="radio"] + label:before {
   -webkit-transition: opacity 0.2s ease-in-out;
   -ms-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
-  background: url("images/overlay.png");
+  /* background: url("images/overlay.png"); */
   border-radius: 0.35em;
   content: "";
   display: block;
@@ -2416,6 +2416,36 @@ avatar:before {
   position: relative;
   white-space: nowrap;
 }
+.possitionRelative {
+  position: relative;
+}
+.topPic {
+  position: absolute;
+  animation-name: cfFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 6.5s;
+  animation-direction: alternate;
+}
+.topPic2 {
+  position: absolute;
+  animation-name: cfFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 7.5s;
+  animation-direction: alternate;
+}
+.topPic3 {
+  position: absolute;
+  animation-name: cfFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5.5s;
+  animation-direction: alternate;
+}
+.possitionRelative .bottomPic {
+  overflow: hidden;
+}
 
 #cf img.bottomInterests {
   width: 30%;
@@ -2424,7 +2454,6 @@ avatar:before {
   margin: 0.5em;
   white-space: nowrap;
   overflow: hidden;
-
   /* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); */
 }
 
@@ -2441,6 +2470,7 @@ avatar:before {
   margin: 0.5em;
   /* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); */
 }
+
 #cf img.topInterests1 {
   position: absolute;
   animation-name: cfFadeInOut;
@@ -2468,6 +2498,9 @@ avatar:before {
   /* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); */
 }
 
+.shadow {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
 /* List */
 
 ol {
