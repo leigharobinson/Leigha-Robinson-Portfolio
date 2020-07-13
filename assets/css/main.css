@@ -2239,8 +2239,14 @@ input[type="radio"] + label:before {
   position: relative;
 }
 
+#containerContact h3 a:hover {
+  /* background-color: rgb(pink) box; */
+  padding: 0.5em;
+  border-radius: 0.5%;
+  box-shadow: 0px 8px 15px rgba(163, 218, 183, 0.7);
+}
 #fitPic {
-  padding: 1.5em;
+  padding: 1.6em;
 }
 #techIcon {
   display: flex;
