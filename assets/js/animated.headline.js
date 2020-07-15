@@ -23,7 +23,7 @@ var typed = new Typed(".typed_title", {
    */
   strings: [
     "Ath^60lete.^400",
-    "Musi^60ca^60n.^400",
+    "Musi^60ci^60an.^400",
     "Soft^60ware^100 Developer.^3000",
   ],
   stringsElement: null,
