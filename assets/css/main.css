@@ -2401,15 +2401,15 @@ avatar:before {
   border-radius: 100%;
   width: 100%;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
-  transition: all 0.5s;
+  /* transition: all 0.5s; */
 
   /* border: yellow 5px solid; */
   /* margin: 0.5em; */
 }
 
-.avatar:hover {
+/* .avatar:hover {
   transform: scale(1.05);
-}
+} */
 
 #myPic {
   display: flex;
