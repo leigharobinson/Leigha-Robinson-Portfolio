@@ -2530,6 +2530,14 @@ avatar:before {
 .shadow {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
 }
+/* Youtube */
+.youtube_vidJTJ {
+  display: flex;
+  justify-content: center;
+}
+.youtube_vidJTJ iframe {
+  border-radius: 10px;
+}
 /* List */
 
 ol {
