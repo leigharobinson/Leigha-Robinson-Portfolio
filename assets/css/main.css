@@ -2532,11 +2532,19 @@ avatar:before {
 }
 /* Youtube */
 .youtube_vidJTJ {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
 .youtube_vidJTJ iframe {
   border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /* List */
 
